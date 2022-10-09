@@ -1,0 +1,212 @@
+html,
+body {
+  max-width: 1920px;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+/* 要求一 */
+body {
+  width: 100%;
+  justify-content: center;
+}
+
+.frame {
+  display: flex;
+  max-width: 1920px;
+  height: 50px;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.left {
+  flex: none;
+  width: 200px;
+  font-weight: bold;
+  justify-content: flex-start;
+}
+
+.right {
+  display: flex;
+  flex: auto;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.item {
+  flex: none;
+  width: 100px;
+  text-align: center;
+}
+
+.headline-section {
+  display: flex;
+  font-size: 40px;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10px auto 0 auto;
+  max-width: 1920px;
+  background-color: #DDEEF8;
+}
+
+.headline-text {
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.photos {
+  width: 1200px;
+  margin: auto;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.promotion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  margin: 10px;
+}
+
+.promotion-item {
+  display: flex;
+  height: 50px;
+  margin: 10px 20px 10px 0;
+  width: 50%;
+  align-items: center;
+  background-color: #DDEEF8;
+}
+
+.promotion-photo {
+  width: 80px;
+  height: 50px;
+  margin: 0 10px 0 0;
+}
+
+
+.list {
+  display: flex;
+  width: 1200px;
+  height: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product {
+  width: 280px;
+  flex: none;
+  margin: 10px;
+}
+
+.list-photo {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.list-title {
+  text-align: center;
+  background-color: #DDEEF8;
+}
+
+.desktop-menu {
+  display: block;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* 要求二 */
+@media(max-width:1200px) {
+
+  .photos {
+    flex-wrap: wrap;
+    max-width: 90%;
+  }
+
+  .promotion {
+    margin: 10px 10px 10px 0;
+    justify-content: center;
+  }
+
+  .promotion-item {
+    width: 45%;
+    margin: 10px;
+    justify-content: flex-start;
+  }
+
+  .list {
+    margin-top: 10px;
+    max-width: 100%;
+  }
+
+  .product {
+    width: 45%;
+  }
+}
+
+/* 要求三 */
+@media(max-width:600px) {
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .right {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .menu-icon {
+    max-width: 50%;
+    max-height: 50%;
+    float: right;
+  }
+
+  .photos {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+
+  .promotion {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .promotion-item {
+    width: 100%;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .list {
+    margin-top: 10opx;
+  }
+
+  .product {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .promotion-photo{
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+
+關鍵流程和細節:
+1. 使用者打開網頁時,立刻透過 JavaScript fetch 連線以上網址,取得景點資料。
+2. 將取得的景點資料,使用 JavaScript 程式動態的做出畫面,僅顯示景點資料中的第一
+張圖片和景點的名稱。務必使用 document.createElement() 與 appendChild() 這兩個
+方法和其相關的技巧搭配完成,禁止使用 innerHTML。
+3. 前 2 個景點資料顯示在最上方的兩個框框,後續的 8 個景點顯示在下方的八個框框,
+其餘資料可忽略不顯示。
+4. 畫面的 RWD 版面設計保持與第一週相同。 -->
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WH_week3_task03</title>
+  <link rel="stylesheet" href="W3_task_3.css">
+</head>
+
+<body>
+  <!-- 總共2個大版塊 -->
+  <div class="frame">
+    <div class="left">My Website</div>
+    <div class="right">
+      <div class="item desktop-menu">Item 1</div>
+      <div class="item desktop-menu">Item 2</div>
+      <div class="item desktop-menu">Item 3</div>
+      <div class="item desktop-menu">Item 4</div>
+      <div class="item mobile-menu"><img src="menu_icon.jpg" alt="" class="menu-icon">
+      </div>
+
+    </div>
+  </div>
+
+  <div class="headline-section">
+    <div class="headline-text">Welcome to MyHome</div>
+  </div>
+
+  <div class="photos">
+
+    <div class="promotion">
+      <!-- <div class="promotion-item" >
+        <img src="mountain.jpg" alt="" class="promotion-photo promotion-img01">
+        <div class="promotion-text">Promotion 1</div>
+      </div>
+
+      <div class="promotion-item">
+        <img src="mountain.jpg" alt="" class="promotion-photo">
+        <div class="promotion-text">Promotion 2</div>
+      </div> -->
+    </div>
+
+    <div class="list">
+      <!-- <div class="product">
+        <img src="mountain.jpg" alt="" class="list-photo">
+        <div class="list-title">Title 1</div>
+      </div>
+      <div class="product">
+        <img src="mountain.jpg" alt="" class="list-photo">
+        <div class="list-title">Title 2</div>
+      </div>
+      <div class="product">
+        <img src="mountain.jpg" alt="" class="list-photo">
+        <div class="list-title">Title 3</div>
+      </div>
+      <div class="product">
+        <img src="mountain.jpg" alt="" class="list-photo">
+        <div class="list-title">Title 4</div>
+      </div>
+      <div class="product">
+        <img src="mountain.jpg" alt="" class="list-photo">
+        <div class="list-title">Title 5</div>
+      </div>
+      <div class="product">
+        <img src="mountain.jpg" alt="" class="list-photo">
+        <div class="list-title">Title 6</div>
+      </div>
+      <div class="product">
+        <img src="mountain.jpg" alt="" class="list-photo">
+        <div class="list-title">Title 7</div>
+      </div>
+      <div class="product">
+        <img src="mountain.jpg" alt="" class="list-photo">
+        <div class="list-title">Title 8</div>
+      </div> -->
+    </div>
+  </div>
+
+<script type="text/javascript" src="W3_task_3.js"></script>
+
+</body>
+
+</html>
